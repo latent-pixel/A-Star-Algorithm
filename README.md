@@ -38,6 +38,6 @@ python3 Navigator.py
 Upon running the package, you can visualize the A* algorithm in action,
 ![](results/2.png)
 *Figure: Screenshot of the path planner output.*
-![](https://drive.google.com/file/d/14F3XQzBM80WnICpDyy7MKuw2kaZV_afU/view?usp=sharing)
+![Demo](https://drive.google.com/file/d/14F3XQzBM80WnICpDyy7MKuw2kaZV_afU/view?usp=sharing)
 *Video: Gazebo Visualization* 
 

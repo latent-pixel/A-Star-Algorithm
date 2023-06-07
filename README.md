@@ -17,27 +17,33 @@ catkin_make
 ```
 Download the `tbot` package into the `src` folder. Open the terminal and enter the following command:
 ```
-git clone git@github.com:latent-pixel/A-Star-Algorithm
+cd src
+git clone git@github.com:latent-pixel/A-Star-Algorithm.git
+```
+Rename the package, just to make it easy going ahead:
+```
+mv A-Star-Algorithm astar
 ```
 Build the package and launch `turtlebot` in a `gazebo` environment:
 ```
-catkin build tbot_astar
-
-roslaunch tbot_astar turtlebot3_prjct3.launch
+catkin build astar
+roslaunch astar turtlebot3_prjct3.launch
 ```
 Open another terminal window and use following commands to start the path planner. You can visualize the output on the `gazebo` window.
 ```
-cd ~/catkin_ws/src/tbot_astar/src
-
+cd ~/catkin_ws/src/astar/src
 chmod +x Navigator.py
-
 python3 Navigator.py
 ```
 
 ## Output
 Upon running the package, you can visualize the A* algorithm in action,
-![](results/2.png)
-*Figure: Screenshot of the path planner output.*
-![Demo](https://drive.google.com/file/d/14F3XQzBM80WnICpDyy7MKuw2kaZV_afU/view?usp=sharing)
+
+![](results/path.jpg)
+
+*Figure: Path planner output.*
+
+![](results/tbot_record.gif)
+
 *Video: Gazebo Visualization* 
 
